@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+
+</head>
+
+<body>
+    <h1>Canada Immigration Records</h1>
+    <table border="1">
+    <tr>
+        <th>Country</th>
+        <th>Continent</th>
+        <th>Region</th>
+        <th>1980</th>
+        <th>1981</th>
+        <th>1982</th>
+        <th>1983</th>
+        <th>1984</th>
+        <th>1985</th>
+        <th>1986</th>
+        <th>1987</th>
+        <th>1988</th>
+        <th>1989</th>
+        <th>1990</th>
+        <th>1991</th>
+        <th>1992</th>
+        <th>1993</th>
+        <th>1994</th>
+        <th>1995</th>
+        <th>1996</th>
+        <th>1997</th>
+        <th>1998</th>
+        <th>1999</th>
+        <th>2000</th>
+        <th>2001</th>
+        <th>2002</th>
+        <th>2003</th>
+        <th>2004</th>
+        <th>2005</th>
+        <th>2006</th>
+        <th>2007</th>
+        <th>2008</th>
+        <th>2009</th>
+        <th>2010</th>
+        <th>2011</th>
+        <th>2012</th>
+        <th>2013</th>   
+    </tr>
+    {% for row in canada%}
+    <tr>
+        <td>{{ row[0] }}</td>
+        <td>{{ row[1] }}</td>
+        <td>{{ row[2] }}</td>
+        <td>{{ row[3] }}</td>
+        <td>{{ row[4] }}</td>
+        <td>{{ row[5] }}</td>
+        <td>{{ row[6] }}</td>
+        <td>{{ row[7] }}</td>
+        <td>{{ row[8] }}</td>
+        <td>{{ row[9] }}</td>
+        <td>{{ row[10] }}</td>
+        <td>{{ row[11] }}</td>
+        <td>{{ row[12] }}</td>
+        <td>{{ row[13] }}</td>
+        <td>{{ row[14] }}</td>
+        <td>{{ row[15] }}</td>
+        <td>{{ row[16] }}</td>
+        <td>{{ row[17] }}</td>
+        <td>{{ row[18] }}</td>
+        <td>{{ row[19] }}</td>
+        <td>{{ row[20] }}</td>
+        <td>{{ row[21] }}</td>
+        <td>{{ row[22] }}</td>
+        <td>{{ row[23] }}</td>
+        <td>{{ row[24] }}</td>
+        <td>{{ row[25] }}</td>
+        <td>{{ row[26] }}</td>
+        <td>{{ row[27] }}</td>
+        <td>{{ row[28] }}</td>
+        <td>{{ row[29] }}</td>
+        <td>{{ row[30] }}</td>
+        <td>{{ row[31] }}</td>
+        <td>{{ row[32] }}</td>
+        <td>{{ row[33] }}</td>
+        <td>{{ row[34] }}</td>
+        <td>{{ row[35] }}</td>
+        <td>{{ row[36] }}</td>
+     </tr>
+    {% endfor %}
+    </table>
+    
+  </body>
+
+</html>
+
